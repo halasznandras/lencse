@@ -1,0 +1,8 @@
+{
+    "server": [
+        "src",
+        "node_modules/jquery/dist/",
+        "node_modules/bootstrap/dist/css"
+    ],
+    "port": 8001
+}
