@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "server": [
         "src",
@@ -5,4 +6,13 @@
         "node_modules/bootstrap/dist/css"
     ],
     "port": 8001
+=======
+{
+    "server": [
+        "src",
+        "node_modules/jquery/dist/",
+        "node_modules/bootstrap/dist/css"
+    ],
+    "port": 8001
+>>>>>>> 9fc69b2ea1cd0518a744eac6a224dc42fa179612
 }
