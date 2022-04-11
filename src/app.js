@@ -1,19 +1,21 @@
 /*
 Fájlnév: app.js
-    2022.03.21
+    2022.04.10
     Halász András
+    Szoft I E 1/1
 */
-var szamitTerfogat = (a, b)=> {
-    return ((4 * Math.PI) / 3) * Math.pow(a, 2) * b;
+
+var szamitKaloria = (suly, tzsir) => {
+    return 370 + (21.6 * (1 - tzsir) * suly);
 }
 
 $('#szamitGomb').on('click', ()=>{
-    let a=Number($('#tengelya').val());
-    let b=Number($('#tengelyb').val());
+    let suly=Number($('#suly').val());
+    let tzsir=Number($('#tzsir').val());
 
-    let terfogat = szamitTerfogat(a, b)
+    let kaloria = szamitKaloria(suly, tzsir)
 
-    console.log(terfogat)
-    $('#terfogat_doboz').fadeIn(400);
-    $('#terfogat').val(terfogat.toFixed(2));
+    console.log(kaloria)
+    $('#kaloria_doboz').fadeIn(400);
+    $('#kaloria').val(kaloria.toFixed(2));
 });
